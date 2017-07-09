@@ -31,7 +31,7 @@ class ParticleFilter {
 	int num_particles; 
 	
 	
-	
+
 	// Flag, if filter is initialized
 	bool is_initialized;
 	
@@ -45,6 +45,7 @@ public:
 
 	// Constructor
 	// @param M Number of particles
+	ParticleFilter(int M) : num_particles(M), is_initialized(false) {}
 	ParticleFilter() : num_particles(0), is_initialized(false) {}
 
 	// Destructor
